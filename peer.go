@@ -1,4 +1,4 @@
-// Package peer implements an object used to represent peers in the ipfs network.
+// Package peer implements an object used to represent peers in the dms3-fs network.
 package peer
 
 import (
@@ -6,10 +6,10 @@ import (
 	"errors"
 	"fmt"
 
-	logging "github.com/ipfs/go-log"
-	ic "github.com/libp2p/go-libp2p-crypto"
+	logging "github.com/dms3-fs/go-log"
+	ic "github.com/dms3-p2p/go-p2p-crypto"
 	b58 "github.com/mr-tron/base58/base58"
-	mh "github.com/multiformats/go-multihash"
+	mh "github.com/dms3-mft/go-multihash"
 )
 
 // MaxInlineKeyLength is the maximum length a key can be for it to be inlined in
@@ -28,7 +28,7 @@ var (
 
 var log = logging.Logger("peer")
 
-// ID is a libp2p peer identity.
+// ID is a dms3-p2p peer identity.
 type ID string
 
 // Pretty returns a b58-encoded string of the ID

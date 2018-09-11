@@ -7,10 +7,10 @@ import (
 	"strings"
 	"testing"
 
-	ic "github.com/libp2p/go-libp2p-crypto"
-	. "github.com/libp2p/go-libp2p-peer"
-	tu "github.com/libp2p/go-libp2p-peer/test"
-	mh "github.com/multiformats/go-multihash"
+	ic "github.com/dms3-p2p/go-p2p-crypto"
+	. "github.com/dms3-p2p/go-p2p-peer"
+	tu "github.com/dms3-p2p/go-p2p-peer/test"
+	mh "github.com/dms3-mft/go-multihash"
 
 	b58 "github.com/mr-tron/base58/base58"
 )
